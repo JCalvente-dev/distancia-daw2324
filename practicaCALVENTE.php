@@ -38,5 +38,5 @@ $num1 = intval(readline("Introduce el primer número: "));
 $num2 = intval(readline("Introduce el segundo número: "));
 
 // Ejecutamos los métodos y mostramos el resultado
-echo "$num1 + $num2 = " . sumar($num1, $num2) . "\n";
+echo "$num1 + $num2 = " . sumar($num1, $num2, $num2) . "\n";
 echo "$num1 * $num2 = " . multiplicar($num1, $num2) . "\n";
