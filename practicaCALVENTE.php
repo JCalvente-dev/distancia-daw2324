@@ -16,9 +16,9 @@
  * @param int $num2 El segundo número.
  * @return int El resultado de sumar $num1 y $num2.
  */
-function sumar($num1, $num2)
+function sumar($num1, $num2, $num3)
 {
-    return $num1 + $num2;
+    return $num1 + $num2 + $num3;
 }
 
 /**
