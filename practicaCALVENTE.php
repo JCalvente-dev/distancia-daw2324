@@ -9,12 +9,18 @@
  * @author Juan Calvente
  */
 
+// Definimos variables estáticas con valores predeterminados
+static $num1 = 5;
+static $num2 = 3;
+
+
 /**
  * Función para sumar dos números.
  *
  * @param int $num1 El primer número.
  * @param int $num2 El segundo número.
  * @return int El resultado de sumar $num1 y $num2.
+ * @internal Este es el comentario para desarrolladores.
  */
 function sumar($num1, $num2)
 {
@@ -33,10 +39,6 @@ function multiplicar($num1, $num2)
     return $num1 * $num2;
 }
 
-// Solicitamos los números y los almacenamos en las variables
-$num1 = intval(readline("Introduce el primer número: "));
-$num2 = intval(readline("Introduce el segundo número: "));
-
-// Ejecutamos los métodos y mostramos el resultado
-echo "$num1 + $num2 = " . sumar($num1, $num2, $num2) . "\n";
+// Ejecutamos los métodos usando las variables estáticas y mostramos el resultado
+echo "$num1 + $num2 = " . sumar($num1, $num2) . "\n";
 echo "$num1 * $num2 = " . multiplicar($num1, $num2) . "\n";
