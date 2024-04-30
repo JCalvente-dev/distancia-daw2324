@@ -12,6 +12,7 @@
 // Definimos variables estáticas con valores predeterminados
 static $num1 = 5;
 static $num2 = 3;
+static $num3 = 7;
 
 
 /**
@@ -22,9 +23,9 @@ static $num2 = 3;
  * @return int El resultado de sumar $num1 y $num2.
  * @internal Este es el comentario para desarrolladores.
  */
-function sumar($num1, $num2)
+function sumar($num1, $num2, $num3)
 {
-    return $num1 + $num2;
+    return $num1 + $num2 + $num3;
 }
 
 /**
@@ -40,5 +41,5 @@ function multiplicar($num1, $num2)
 }
 
 // Ejecutamos los métodos usando las variables estáticas y mostramos el resultado
-echo "$num1 + $num2 = " . sumar($num1, $num2) . "\n";
+echo "$num1 + $num2 = " . sumar($num1, $num2, $num3) . "\n";
 echo "$num1 * $num2 = " . multiplicar($num1, $num2) . "\n";
